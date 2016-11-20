@@ -1,6 +1,6 @@
 $ ->
 	$('.add_to_cart').on 'ajax:success', (e, data, status, xhr) ->
-		console.log data
+		$('#products_list').append data
 
 	$('.add_to_cart').on 'ajax:error', (e, xhr, status, error) ->
 		console.log e
