@@ -1,6 +1,7 @@
-h1 Welcome#index
-p Find me in app/views/welcome/index.html.slim
+h1
+	| Welcome#index
+	span#cart_items_count
 
-= link_to 'Add Product to cart', '/add-to-cart', class: 'add_to_cart', remote: true
+= link_to 'Add Product to cart', '/add-to-cart', class: 'add_to_cart', remote: true, data: { type: :json }
 
 #products_list
