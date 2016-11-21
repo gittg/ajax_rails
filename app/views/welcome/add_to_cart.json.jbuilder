@@ -1,4 +1,8 @@
 json.set! :html_content, {
-	'#cart_items_count' => Time.now,
-	'#products_list' => '<h2>Product Item</h2>' 
+  replace: {
+    '#cart_items_count' => Time.now
+  },
+  append: {
+    '#products_list' => '<h2>Product Item</h2>' 
+  }
 }
